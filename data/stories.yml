@@ -1,0 +1,51 @@
+version: "3.1"
+stories:
+- story: greeting
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: help_request
+  steps:
+    - intent: ask_help
+    - action: utter_ask_help
+
+- story: pest_report
+  steps:
+    - intent: report_pest
+    - action: utter_report_pest
+
+- story: weather_info
+  steps:
+    - intent: weather_info
+    - action: utter_weather_info
+
+- story: navigation_help
+  steps:
+    - intent: navigation_help
+    - action: utter_navigation_help
+
+- story: feedback_yes
+  steps:
+    - intent: yes
+    - action: utter_yes
+
+- story: feedback_no
+  steps:
+    - intent: no
+    - action: utter_not_satisfied
+
+- story: user_not_satisfied
+  steps:
+    - intent: not_satisfied
+    - action: utter_not_satisfied
+
+- story: goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Menjelaskan semua fitur
+  steps:
+    - intent: explain_all_features
+    - action: action_explain_all_features

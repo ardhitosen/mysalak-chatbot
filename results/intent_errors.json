@@ -1,0 +1,50 @@
+[
+  {
+    "text": "iya",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.9999819993972778
+    }
+  },
+  {
+    "text": "betul",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.9979088306427002
+    }
+  },
+  {
+    "text": "benar",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.9856454730033875
+    }
+  },
+  {
+    "text": "tentu saja",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "tanya_fitur",
+      "confidence": 0.9939591884613037
+    }
+  },
+  {
+    "text": "iya dong",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.9613511562347412
+    }
+  },
+  {
+    "text": "ya",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.9999828338623047
+    }
+  }
+]

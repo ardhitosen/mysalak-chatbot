@@ -1,0 +1,46 @@
+version: "3.1"
+rules:
+- rule: Greet the user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Provide assistance
+  steps:
+    - intent: ask_help
+    - action: utter_ask_help
+
+- rule: Report pest
+  steps:
+    - intent: report_pest
+    - action: utter_report_pest
+
+- rule: Provide weather info
+  steps:
+    - intent: weather_info
+    - action: utter_weather_info
+
+- rule: Navigation help
+  steps:
+    - intent: navigation_help
+    - action: utter_navigation_help
+
+- rule: User feedback yes
+  steps:
+    - intent: yes
+    - action: utter_yes
+
+- rule: User feedback no
+  steps:
+    - intent: no
+    - action: utter_not_satisfied
+
+- rule: explain all features
+  steps:
+    - intent: explain_all_features
+    - action: action_explain_all_features

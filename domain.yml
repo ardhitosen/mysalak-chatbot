@@ -1,0 +1,61 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - ask_help
+  - report_pest
+  - weather_info
+  - navigation_help
+  - not_satisfied
+  - yes
+  - no
+  - ask_features
+  - explain_all_features
+
+entities:
+  - problem
+
+slots:
+  problem:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: problem
+
+responses:
+  utter_greet:
+    - text: "Halo! Selamat datang di MySalak. Ada yang bisa kami bantu hari ini?"
+
+  utter_goodbye:
+    - text: "Sampai jumpa, semoga harimu menyenangkan!"
+
+  utter_ask_help:
+    - text: "Saya dapat membantu Anda dalam hal berikut:\n- Informasi cuaca\n- Melaporkan hama\n- Kesulitan navigasi aplikasi\n- Fitur\n\nSilakan pilih atau ketikkan pertanyaan Anda."
+
+  utter_report_pest:
+    - text: "Untuk melaporkan hama, gunakan fitur Foto Hitung Hama pada aplikasi MySalak."
+
+  utter_weather_info:
+    - text: "Anda dapat melihat prediksi cuaca dengan membuka menu cuaca pada navigation bar."
+
+  utter_navigation_help:
+    - text: "Silakan buka menu utama aplikasi MySalak. Anda akan menemukan fitur cuaca, manajemen hama, dan lainnya di navigation bar."
+
+  utter_feedback:
+    - text: "Apakah jawaban saya membantu Anda?"
+
+  utter_explain_all_features:
+    - text: "Berikut adalah penjelasan semua fitur di MySalak:"
+
+  utter_not_satisfied:
+    - text: "Mohon maaf atas ketidaknyamanannya. Apakah ada hal lain yang bisa kami bantu?"
+
+  utter_yes:
+    - text: "Baik, silakan ajukan pertanyaan Anda."
+
+  utter_no:
+    - text: "Baik, jika butuh bantuan lainnya, jangan ragu untuk menghubungi kami."
+
+actions:
+  - action_explain_all_features

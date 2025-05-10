@@ -1,0 +1,80 @@
+{
+  "lapor_hama": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "fallback": {
+    "precision": 0.375,
+    "recall": 1.0,
+    "f1-score": 0.5454545454545454,
+    "support": 3,
+    "confused_with": {}
+  },
+  "bantu_navigasi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "info_cuaca": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "fallback": 5,
+      "tanya_fitur": 1
+    }
+  },
+  "tanya_fitur": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 4,
+    "confused_with": {}
+  },
+  "cari_informasi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "info_hama": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "accuracy": 0.8181818181818182,
+  "macro avg": {
+    "precision": 0.771875,
+    "recall": 0.875,
+    "f1-score": 0.8042929292929293,
+    "support": 33
+  },
+  "weighted avg": {
+    "precision": 0.7371212121212121,
+    "recall": 0.8181818181818182,
+    "f1-score": 0.7633914906642179,
+    "support": 33
+  },
+  "micro avg": {
+    "precision": 0.8181818181818182,
+    "recall": 0.8181818181818182,
+    "f1-score": 0.8181818181818182,
+    "support": 33
+  }
+}

@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Docker
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.tar.gz
+*.whl
+docker-compose.override.yml
+
+# Rasa
+models/
+*.db
+*.lock
+*.sqlite
+*.pyc
+*.pyo
+*.DS_Store

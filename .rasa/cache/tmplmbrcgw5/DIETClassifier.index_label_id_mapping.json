@@ -1,0 +1,14 @@
+{
+  "0": "ask_features",
+  "1": "ask_help",
+  "2": "choose_feature",
+  "3": "explain_all_features",
+  "4": "goodbye",
+  "5": "greet",
+  "6": "navigation_help",
+  "7": "no",
+  "8": "not_satisfied",
+  "9": "report_pest",
+  "10": "weather_info",
+  "11": "yes"
+}

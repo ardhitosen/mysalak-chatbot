@@ -1,0 +1,6 @@
+[
+  {
+    "name": "feature",
+    "pattern": "(\\bProfil\\b|\\bInformasi\\ Cuaca\\b|\\bManajemen\\ Hama\\b|\\bPeta\\ Persebaran\\ Hama\\b|\\bFoto\\ Hitung\\ Hama\\b|\\bArtikel\\b|\\bCuaca\\b|\\bHama\\b|\\bArtikel\\ keren\\b|\\bFitur\\ Profil\\b|\\bFitur\\ Cuaca\\b|\\bFitur\\ Hama\\b|\\bFitur\\ Artikel\\b)"
+  }
+]

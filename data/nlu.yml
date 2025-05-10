@@ -1,0 +1,123 @@
+version: "3.1 "
+nlu:
+- intent: greet
+  examples: |
+    - Halo
+    - Hi
+    - Selamat pagi
+    - Selamat sore
+    - Apa kabar?
+    - Hai
+    - Pagi
+    - Sore
+    - Yo
+    - Apa loh?
+    - Apa nih?
+
+- intent: goodbye
+  examples: |
+    - Terima kasih
+    - Sampai jumpa
+    - Dadah
+    - Bye
+    - Makasih
+    - Dah
+    - Ciao
+    - See ya
+    - Thanks ya
+    - Oke dah
+
+- intent: ask_features
+  examples: |
+    - Fitur apa aja di MySalak?
+    - Apa aja fitur MySalak?
+    - Jelasin fitur-fitur di MySalak dong
+    - Ada fitur apa buat petani di MySalak?
+    - Fitur MySalak apa aja sih?
+    - Ada fitur keren apa di MySalak?
+
+- intent: explain_all_features
+  examples: |
+    - Jelasin semua fitur MySalak dong
+    - Semua fitur di MySalak apa aja?
+    - Bisa jelasin fitur di MySalak?
+    - Tolong dong jelasin semua fitur
+    - Apa fungsi semua fitur di MySalak?
+    - jelasin semua fitur
+    - semua fitur
+    - fitur semuanya ada apa
+    - ga ngerti fitur semuanya
+    - jelasin semua fiturnya dong
+    - Manfaat fitur di MySalak apa aja?
+    - Ceritain dong fitur di MySalak
+    - Semua fitur di MySalak tuh apa aja sih?
+
+- intent: ask_help
+  examples: |
+    - Apa yang bisa dibantu?
+    - Gw butuh bantuan
+    - Bisa bantuin gw?
+    - Tolong dong bantu
+    - Help me
+    - Bantuin dong
+    - Gimana nih caranya?
+    - Gw bingung nih
+
+- intent: report_pest
+  examples: |
+    - Gw mau lapor hama
+    - Hama di kebun gw makin banyak
+    - Ada banyak hama nih
+    - Gimana cara lapor hama?
+    - Lapor hama dong
+    - Hama makin parah nih
+    - Kebun gw kena hama
+
+- intent: weather_info
+  examples: |
+    - Cuaca hari ini gimana?
+    - Prediksi cuaca 7 hari ke depan dong
+    - Besok hujan gak sih?
+    - Info cuaca dong
+    - Cuaca gimana nih?
+    - Hujan gak ya?
+    - Prediksi cuaca dong
+
+- intent: navigation_help
+  examples: |
+    - Gw gak ngerti pake aplikasi ini
+    - Gimana cara buka fitur cuaca?
+    - Gak tau cara lapor hama
+    - Navigasi aplikasi ini ribet
+    - Gimana cara pindah menu?
+    - Gw bingung pake ini
+
+- intent: not_satisfied
+  examples: |
+    - Gak membantu
+    - Masih bingung nih
+    - Jawabannya gak sesuai
+    - Gak puas
+    - Kok gini sih?
+    - Gw gak ngerti
+    - Masih gak jelas
+
+- intent: yes
+  examples: |
+    - Ya
+    - Betul
+    - Benar banget
+    - Iya
+    - Yup
+    - Oke
+    - Bener
+
+- intent: no
+  examples: |
+    - Gak
+    - Bukan
+    - Salah
+    - Nope
+    - Enggak
+    - Gak tuh
+    - Kagak

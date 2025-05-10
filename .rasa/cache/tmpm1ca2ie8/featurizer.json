@@ -1,0 +1,69 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "ask_feature": 0,
+        "ask_help": 1,
+        "back": 2,
+        "choose_feature": 3,
+        "explain_all_features": 4,
+        "goodbye": 5,
+        "greet": 6,
+        "navigation_help": 7,
+        "nlu_fallback": 8,
+        "no": 9,
+        "not_satisfied": 10,
+        "out_of_scope": 11,
+        "report_pest": 12,
+        "restart": 13,
+        "session_start": 14,
+        "weather_info": 15,
+        "yes": 16
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_explain_feature": 13,
+        "action_explain_all_features": 14,
+        "utter_ask_features": 15,
+        "utter_ask_help": 16,
+        "utter_explain_all_features": 17,
+        "utter_explain_feature": 18,
+        "utter_feedback": 19,
+        "utter_goodbye": 20,
+        "utter_greet": 21,
+        "utter_navigation_help": 22,
+        "utter_no": 23,
+        "utter_not_satisfied": 24,
+        "utter_report_pest": 25,
+        "utter_weather_info": 26,
+        "utter_yes": 27
+      },
+      "entities": {
+        "feature": 0,
+        "problem": 1
+      },
+      "slots": {
+        "problem_0": 0,
+        "feature_0": 1
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

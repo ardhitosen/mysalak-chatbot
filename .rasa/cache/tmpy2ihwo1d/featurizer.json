@@ -1,0 +1,50 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "back": 0,
+        "bantu_navigasi": 1,
+        "cari_informasi": 2,
+        "fallback": 3,
+        "info_cuaca": 4,
+        "info_hama": 5,
+        "lapor_hama": 6,
+        "nlu_fallback": 7,
+        "out_of_scope": 8,
+        "restart": 9,
+        "session_start": 10,
+        "tanya_fitur": 11
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_bantu_navigasi": 13,
+        "utter_cari_informasi": 14,
+        "utter_fallback": 15,
+        "utter_info_cuaca": 16,
+        "utter_info_hama": 17,
+        "utter_lapor_hama": 18,
+        "utter_tanya_fitur": 19
+      },
+      "entities": {},
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}
