@@ -45,9 +45,6 @@ responses:
   utter_feedback:
     - text: "Apakah jawaban saya membantu Anda?"
 
-  utter_explain_all_features:
-    - text: "Berikut adalah penjelasan semua fitur di MySalak:"
-
   utter_not_satisfied:
     - text: "Mohon maaf atas ketidaknyamanannya. Apakah ada hal lain yang bisa kami bantu?"
 
@@ -57,5 +54,12 @@ responses:
   utter_no:
     - text: "Baik, jika butuh bantuan lainnya, jangan ragu untuk menghubungi kami."
 
-actions:
-  - action_explain_all_features
+  utter_explain_all_features:
+    - text: |
+        Berikut adalah penjelasan semua fitur di MySalak:
+        - **Profil**: Fitur Profil memungkinkan petani untuk mengedit data akun mereka seperti nama, nomor telepon, dan kelompok tani.
+        - **Informasi Cuaca**: Fitur Informasi Cuaca menyediakan ramalan cuaca harian untuk membantu petani merencanakan aktivitas.
+        - **Manajemen Hama**: Fitur Manajemen Hama menampilkan data FTD (Fruit Fly Trapped per Day) untuk kebun.
+        - **Peta Persebaran Hama**: Peta Persebaran Hama menunjukkan lokasi kebun dan status hama dalam bentuk peta interaktif.
+        - **Foto Hitung Hama**: Foto Hitung Hama memungkinkan petani untuk mengambil foto hama dan menghitung jumlahnya.
+        - **Artikel**: Fitur Artikel menyediakan tips dan trik terkait pengelolaan kebun dan cara mengatasi hama.

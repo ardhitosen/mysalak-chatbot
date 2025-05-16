@@ -43,4 +43,4 @@ rules:
 - rule: explain all features
   steps:
     - intent: explain_all_features
-    - action: action_explain_all_features
+    - action: utter_explain_all_features
