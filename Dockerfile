@@ -1,11 +1,11 @@
 # Use the official Rasa image
 FROM rasa/rasa:3.1.0
 
-# Copy the entire project into the container
-COPY . /mysalak-chatbot
-
 # Set the working directory to /mysalak-chatbot
 WORKDIR /mysalak-chatbot
+
+# Copy the entire project into the container
+COPY . .
 
 # Expose the default Rasa port
 EXPOSE 5005
