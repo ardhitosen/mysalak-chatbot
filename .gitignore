@@ -12,7 +12,6 @@ env/
 *.pid
 *.seed
 *.pid.lock
-*.tar.gz
 *.whl
 docker-compose.override.yml
 
