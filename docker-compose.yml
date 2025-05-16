@@ -1,0 +1,27 @@
+services:
+  rasa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5005:5005" # Port untuk Rasa
+    volumes:
+      - ./models:/mysalak-chatbot/models
+      - ./data:/mysalak-chatbot/data
+      - ./config.yml:/mysalak-chatbot/config.yml
+      - ./domain.yml:/mysalak-chatbot/domain.yml
+      - ./endpoints.yml:/mysalak-chatbot/endpoints.yml
+    command:
+      - run
+      - --enable-api
+      - --cors
+      - "*"
+
+  action_server:
+    build:
+      context: .
+      dockerfile: actions/Dockerfile
+    ports:
+      - "5055:5055" # Port untuk action server
+    volumes:
+      - ./actions:/mysalak-chatbot/actions

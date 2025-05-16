@@ -1,11 +1,11 @@
 # Gunakan image Python
 FROM python:3.10-slim
 
-# Salin file actions ke dalam container
-COPY ./actions /mysalak-/actions
-
 # Set direktori kerja
-WORKDIR /app
+WORKDIR /mysalak-chatbot/actions
+
+# Salin file actions ke dalam container
+COPY ./actions ./actions
 
 # Install dependencies
 COPY requirements-actions.txt .
