@@ -7,8 +7,8 @@ WORKDIR /mysalak-chatbot
 # Salin semua file proyek ke dalam container
 COPY . .
 
-# Latih model Rasa
-RUN rasa train
+# Salin model yang sudah dilatih ke dalam container
+COPY ./models /mysalak-chatbot/models
 
 # Expose port untuk Rasa
 EXPOSE 5005
