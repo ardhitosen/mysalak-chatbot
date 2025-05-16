@@ -10,5 +10,8 @@ COPY . .
 # Expose port untuk Rasa
 EXPOSE 5005
 
-# Jalankan Rasa
-CMD ["rasa", "run", "--enable-api", "--cors", "*"]
+# Ganti ENTRYPOINT untuk menjalankan Rasa
+ENTRYPOINT ["rasa"]
+
+# Jalankan Rasa dengan REST API diaktifkan
+CMD ["run", "--enable-api", "--cors", "*"]
