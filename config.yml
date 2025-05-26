@@ -1,12 +1,9 @@
 version: "3.1"
 
-recipe: default.v1
 language: id
 
 pipeline:
 - name: WhitespaceTokenizer
-- name: RegexFeaturizer
-- name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
 - name: DIETClassifier
   epochs: 100
@@ -20,4 +17,6 @@ policies:
 - name: UnexpecTEDIntentPolicy
   max_history: 5
   epochs: 100
-assistant_id: 20250509-162022-denim-plateau
+  constrain_similarities: true
+
+assistant_id: 20250522-013736-furious-butterkase

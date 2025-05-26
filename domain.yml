@@ -1,65 +1,121 @@
 version: "3.1"
+
 intents:
   - greet
   - goodbye
-  - ask_help
+  - thanks
+  - affirm
+  - deny
+  - ask_weather
   - report_pest
-  - weather_info
-  - navigation_help
-  - not_satisfied
-  - yes
-  - no
+  - pest_map
+  - pest_photo
+  - ask_articles
+  - profile_management
+  - feedback_positive
+  - feedback_negative
+  - contact_admin
+  - faq_app_usage
   - ask_features
-  - explain_all_features
-
-entities:
-  - problem
-
-slots:
-  problem:
-    type: text
-    influence_conversation: true
-    mappings:
-      - type: from_entity
-        entity: problem
+  - explain_pests
+  - how_to_record_pest
+  - navigation_help
+  - weather_pest_relation
 
 responses:
   utter_greet:
-    - text: "Halo! Selamat datang di MySalak. Ada yang bisa kami bantu hari ini?"
+    - text: "Halo! Selamat datang di MySalak 🍃 Saya bisa membantu menjelaskan fitur, hama, navigasi, hubungan cuaca dengan hama, cara melaporkan atau mencatat temuan hama melalui aplikasi MySalak"
 
   utter_goodbye:
-    - text: "Sampai jumpa, semoga harimu menyenangkan!"
+    - text: "Sampai jumpa! Semoga harimu menyenangkan."
 
-  utter_ask_help:
-    - text: "Saya dapat membantu Anda dalam hal berikut:\n- Informasi cuaca\n- Melaporkan hama\n- Kesulitan navigasi aplikasi\n- Fitur\n\nSilakan pilih atau ketikkan pertanyaan Anda."
+  utter_thanks:
+    - text: "Sama-sama! Senang bisa membantu 😊"
+
+  utter_ask_weather:
+    - text: "Fitur Informasi Cuaca menyediakan ramalan cuaca harian untuk membantu petani merencanakan aktivitas."
 
   utter_report_pest:
-    - text: "Untuk melaporkan hama, gunakan fitur Foto Hitung Hama pada aplikasi MySalak."
+    - text: "Fitur Manajemen Hama menampilkan data FTD (Fruit Fly Trapped per Day) untuk kebun."
 
-  utter_weather_info:
-    - text: "Anda dapat melihat prediksi cuaca dengan membuka menu cuaca pada navigation bar."
+  utter_pest_map:
+    - text: "Peta Persebaran Hama menunjukkan lokasi kebun dan status hama dalam bentuk peta interaktif."
+
+  utter_pest_photo:
+    - text: "Foto Hitung Hama memungkinkan petani untuk mengambil foto hama dan menghitung jumlahnya."
+
+  utter_ask_articles:
+    - text: "Fitur Artikel menyediakan tips dan trik terkait pengelolaan kebun dan cara mengatasi hama. "
+
+  utter_profile_management:
+    - text: "Fitur Profil memungkinkan petani untuk mengedit data akun mereka seperti nama, nomor telepon, dan kelompok tani."
+
+  utter_feedback_positive:
+    - text: "Terima kasih atas feedback positifnya! Kami terus berusaha jadi lebih baik 😊"
+
+  utter_feedback_negative:
+    - text: "Mohon maaf atas ketidaknyamanannya. Masukan Anda sangat berarti untuk perbaikan aplikasi kami."
+
+  utter_contact_admin:
+    - text: "Anda bisa menghubungi admin kami melalui WhatsApp di 081325196443."
+
+  utter_faq_app_usage:
+    - text: "MySalak adalah aplikasi pintar yang membantu petani mendapatkan informasi cuaca, melaporkan hama, dan mengakses tips pertanian."
+
+  utter_ask_features:
+    - text: |
+        Fitur utama MySalak meliputi:
+        🌦️ Informasi Cuaca
+        🐛 Laporan & Deteksi Hama
+        🗺️ Peta Persebaran Hama
+        📸 Foto Hitung Hama
+        📚 Artikel & Tips Pertanian
+        👤 Manajemen Profil Petani
+        Fitur mana yang ingin Anda ketahui lebih lanjut?
+
+  utter_default:
+    - text: "Maaf, saya belum paham maksud Anda. Bisa coba ulangi dengan kata lain?"
+  
+  utter_explain_pests:
+    - text: |
+        Jenis hama yang umum ditemukan adalah:
+        🪰 **Lalat Buah**  
+        🐜 **Kutu Putih**  
+        🐞 **Kumbang Girang**  
+        🐀 **Tikus**  
+        🐿️ **Bajing**  
+        Masing-masing hama ini memiliki dampak berbeda terhadap tanaman. Di aplikasi ini, hama utama yang dianalisis adalah Lalat Buah.
+
+  utter_how_to_record_pest:
+    - text: |
+        Untuk mencatat temuan hama di MySalak:
+        ✅ Tekan tombol **hijau di tengah**  
+        📸 Ambil **foto lalat** dengan jelas  
+        🔲 Gunakan **papan yang disediakan** agar hasil lebih akurat  
+        Pastikan hama terlihat jelas pada foto!
 
   utter_navigation_help:
-    - text: "Silakan buka menu utama aplikasi MySalak. Anda akan menemukan fitur cuaca, manajemen hama, dan lainnya di navigation bar."
-
-  utter_feedback:
-    - text: "Apakah jawaban saya membantu Anda?"
-
-  utter_not_satisfied:
-    - text: "Mohon maaf atas ketidaknyamanannya. Apakah ada hal lain yang bisa kami bantu?"
-
-  utter_yes:
-    - text: "Baik, silakan ajukan pertanyaan Anda."
-
-  utter_no:
-    - text: "Baik, jika butuh bantuan lainnya, jangan ragu untuk menghubungi kami."
-
-  utter_explain_all_features:
     - text: |
-        Berikut adalah penjelasan semua fitur di MySalak:
-        - **Profil**: Fitur Profil memungkinkan petani untuk mengedit data akun mereka seperti nama, nomor telepon, dan kelompok tani.
-        - **Informasi Cuaca**: Fitur Informasi Cuaca menyediakan ramalan cuaca harian untuk membantu petani merencanakan aktivitas.
-        - **Manajemen Hama**: Fitur Manajemen Hama menampilkan data FTD (Fruit Fly Trapped per Day) untuk kebun.
-        - **Peta Persebaran Hama**: Peta Persebaran Hama menunjukkan lokasi kebun dan status hama dalam bentuk peta interaktif.
-        - **Foto Hitung Hama**: Foto Hitung Hama memungkinkan petani untuk mengambil foto hama dan menghitung jumlahnya.
-        - **Artikel**: Fitur Artikel menyediakan tips dan trik terkait pengelolaan kebun dan cara mengatasi hama.
+        Untuk bernavigasi di MySalak:
+        📍 Gunakan menu utama untuk memilih fitur  
+        🐛 Untuk laporan hama, klik ikon hama  
+        📸 Untuk deteksi foto, klik tombol kamera  
+        📚 Untuk artikel, klik ikon buku  
+        Ikon dan warna telah disesuaikan agar mudah digunakan petani.
+
+  utter_weather_pest_relation:
+    - text: |
+        Hubungan cuaca dan hama dianalisis menggunakan **batasan-batasan dari UGM**.  
+        🌧️ Cuaca lembab & hujan cenderung meningkatkan populasi hama tertentu.  
+        🔥 Cuaca panas dapat menekan perkembangan beberapa jenis hama.  
+        Aplikasi MySalak akan menampilkan peringatan berdasarkan prediksi ini.
+  
+  utter_affirm:
+    - text: "Baik, terima kasih konfirmasinya! Silakan lanjutkan 😊"
+
+  utter_deny:
+    - text: "Baik, tidak masalah. Silakan beri tahu saya jika ada yang bisa saya bantu."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

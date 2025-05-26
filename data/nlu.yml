@@ -1,123 +1,648 @@
-version: "3.1 "
+version: "3.1"
 nlu:
-- intent: greet
-  examples: |
-    - Halo
-    - Hi
-    - Selamat pagi
-    - Selamat sore
-    - Apa kabar?
-    - Hai
-    - Pagi
-    - Sore
-    - Yo
-    - Apa loh?
-    - Apa nih?
+  - intent: greet
+    examples: |
+      - halo
+      - hai
+      - selamat pagi
+      - selamat siang
+      - selamat malam
+      - hai bot
+      - permisi
+      - apa kabar?
+      - assalamualaikum
+      - selamat datang
+      - halo, ada yang bisa dibantu?
+      - salam kenal
+      - hai, saya mau tanya
+      - halo, ada info terbaru?
+      - hai, bagaimana kabarmu?
+      - halo, tolong bantu saya
+      - selamat sore
+      - salam
+      - halo semuanya
+      - hai teman
+      - hallo
+      - hey
+      - yo
+      - halo bot pintar
+      - halo, apakah kamu bisa bantu?
+      - hai, aku butuh info
+      - hai, bagaimana cuaca hari ini?
+      - halo, apa yang bisa kamu lakukan?
+      - selamat pagi, bot
 
-- intent: goodbye
-  examples: |
-    - Terima kasih
-    - Sampai jumpa
-    - Dadah
-    - Bye
-    - Makasih
-    - Dah
-    - Ciao
-    - See ya
-    - Thanks ya
-    - Oke dah
+  - intent: goodbye
+    examples: |
+      - dadah
+      - sampai jumpa
+      - selamat tinggal
+      - bye
+      - saya pamit ya
+      - makasih, sampai nanti
+      - sampai bertemu lagi
+      - sampai jumpa lagi
+      - sampai nanti ya
+      - daag
+      - daddyyy
+      - sampai ketemu
+      - saya keluar dulu ya
+      - makasih banyak, bye
+      - dadah, jaga diri ya
+      - selamat malam, sampai besok
+      - sampai jumpa, jaga kesehatan
+      - aku pamit dulu
+      - sampai jumpa di lain waktu
+      - terima kasih, selamat tinggal
+      - daddyyy, sampai nanti
+      - bye bye
+      - saya harus pergi
+      - sampai bertemu di lain hari
+      - sampai ketemu lagi, makasih
+      - makasih, aku keluar dulu
+      - terima kasih, aku pamit
+      - sampai jumpa, bot
 
-- intent: ask_features
-  examples: |
-    - Fitur apa aja di MySalak?
-    - Apa aja fitur MySalak?
-    - Jelasin fitur-fitur di MySalak dong
-    - Ada fitur apa buat petani di MySalak?
-    - Fitur MySalak apa aja sih?
-    - Ada fitur keren apa di MySalak?
+  - intent: thanks
+    examples: |
+      - terima kasih
+      - makasih
+      - trims
+      - thank you
+      - terima kasih banyak
+      - thanks ya
+      - saya sangat berterima kasih
+      - makasih ya bot
+      - terima kasih atas bantuannya
+      - terima kasih banyak ya
+      - makasih banyak
+      - thank you so much
+      - terima kasih banyak bantuanmu
+      - terima kasih sebelumnya
+      - saya hargai bantuanmu
+      - thanks a lot
+      - makasih atas informasinya
+      - terima kasih banyak ya, bot
+      - trims ya
+      - saya sangat terbantu
+      - terima kasih, kamu hebat
+      - thanks for your help
+      - saya berterima kasih
+      - terima kasih sudah membantu
+      - terima kasih ya, sudah dijelaskan
+      - makasih, saya paham sekarang
+      - saya menghargai bantuannya
+      - thanks banget
+      - terima kasih banyak sekali
 
-- intent: explain_all_features
-  examples: |
-    - Jelasin semua fitur MySalak dong
-    - Semua fitur di MySalak apa aja?
-    - Bisa jelasin fitur di MySalak?
-    - Tolong dong jelasin semua fitur
-    - Apa fungsi semua fitur di MySalak?
-    - jelasin semua fitur
-    - semua fitur
-    - fitur semuanya ada apa
-    - ga ngerti fitur semuanya
-    - jelasin semua fiturnya dong
-    - Manfaat fitur di MySalak apa aja?
-    - Ceritain dong fitur di MySalak
-    - Semua fitur di MySalak tuh apa aja sih?
+  - intent: affirm
+    examples: |
+      - iya
+      - benar
+      - betul
+      - tentu
+      - ya dong
+      - ya
+      - setuju
+      - oke
+      - sudah pasti
+      - tentu saja
+      - iya benar
+      - iya, saya setuju
+      - pastinya
+      - iya, betul sekali
+      - saya setuju dengan itu
+      - iya, tentu saja
+      - oke, saya paham
+      - iya, benar begitu
+      - iya, saya setuju
+      - iya dong
+      - ya, benar
+      - ya, saya setuju
+      - pastinya iya
+      - iya, saya paham
+      - iya, makasih
+      - saya setuju sekali
+      - oke, benar begitu
+      - iya, terima kasih
+      - tentu saja iya
 
-- intent: ask_help
-  examples: |
-    - Apa yang bisa dibantu?
-    - Gw butuh bantuan
-    - Bisa bantuin gw?
-    - Tolong dong bantu
-    - Help me
-    - Bantuin dong
-    - Gimana nih caranya?
-    - Gw bingung nih
+  - intent: deny
+    examples: |
+      - tidak
+      - nggak
+      - ga
+      - bukan
+      - nope
+      - tidak sama sekali
+      - saya tidak setuju
+      - enggak
+      - bukan begitu
+      - tidak benar
+      - tidak, terima kasih
+      - enggak, saya tidak mau
+      - tidak bisa
+      - saya tolak
+      - tidak ya
+      - bukan itu maksud saya
+      - saya nggak setuju
+      - tidak, saya salah paham
+      - bukan, bukan begitu
+      - saya tidak yakin
+      - tidak, jangan
+      - tidak, terima kasih
+      - enggak, saya keberatan
+      - tidak, itu salah
+      - saya tidak ingin
+      - tidak, saya menolak
+      - bukan, saya tidak suka
+      - saya tidak ingin itu
+      - tidak, itu tidak benar
 
-- intent: report_pest
-  examples: |
-    - Gw mau lapor hama
-    - Hama di kebun gw makin banyak
-    - Ada banyak hama nih
-    - Gimana cara lapor hama?
-    - Lapor hama dong
-    - Hama makin parah nih
-    - Kebun gw kena hama
+  - intent: ask_weather
+    examples: |
+      - bagaimana cuaca hari ini?
+      - info cuaca di daerah saya
+      - cuaca besok gimana?
+      - saya ingin tahu ramalan cuaca
+      - cuaca hari ini bagaimana?
+      - apakah akan hujan hari ini?
+      - ramalan cuaca untuk minggu ini?
+      - cuaca sekarang di sekitar sini?
+      - bagaimana suhu hari ini?
+      - prediksi cuaca hari ini bagaimana?
+      - apakah cuaca cerah hari ini?
+      - ada kemungkinan hujan besok?
+      - cuaca panas atau dingin hari ini?
+      - saya mau tahu kondisi cuaca sekarang
+      - tolong kasih info cuaca hari ini
+      - apakah akan ada badai minggu ini?
+      - ramalan cuaca untuk daerah saya bagaimana?
+      - saya perlu tahu cuaca besok
+      - bagaimana keadaan cuaca hari ini?
+      - apakah ada hujan hari ini?
+      - kondisi cuaca terkini bagaimana?
+      - apakah besok akan cerah?
+      - ramalan cuaca terbaru ada?
+      - cuaca siang ini seperti apa?
+      - bagaimana kondisi angin hari ini?
+      - apakah hari ini cocok untuk bertani?
+      - tolong informasikan cuaca terkini
+      - apakah hujan turun hari ini?
+      - bagaimana cuaca malam ini?
 
-- intent: weather_info
-  examples: |
-    - Cuaca hari ini gimana?
-    - Prediksi cuaca 7 hari ke depan dong
-    - Besok hujan gak sih?
-    - Info cuaca dong
-    - Cuaca gimana nih?
-    - Hujan gak ya?
-    - Prediksi cuaca dong
+  - intent: report_pest
+    examples: |
+      - saya ingin melaporkan hama
+      - ada hama di kebun saya
+      - lapor serangan hama
+      - tanaman saya terserang hama
+      - saya lihat lalat buah banyak banget
+      - hama menyerang pohon salak saya
+      - tolong catat ada serangan hama
+      - saya menemukan hama di tanaman saya
+      - ada serangan ulat di kebun saya
+      - hama yang merusak daun banyak
+      - saya mau lapor ada hama di ladang
+      - tanaman saya diserang hama wereng
+      - ada lalat buah menyerang buah salak
+      - laporkan hama wereng di kebun saya
+      - saya perlu melaporkan serangan hama lalat
+      - hama membuat buah salak busuk
+      - saya lihat banyak ulat di tanaman
+      - ada hama baru di lahan pertanian saya
+      - tanaman terserang hama yang parah
+      - saya mau lapor hama yang merusak daun
+      - tolong catat serangan hama lalat buah
+      - tanaman saya terserang serangga hama
+      - ada banyak hama di sekitar tanaman
+      - hama serang tanaman salak saya
+      - saya perlu melaporkan lalat buah banyak
+      - tanaman saya rusak karena hama
+      - laporkan hama wereng di ladang
+      - hama ulat menyerang daun salak saya
+      - ada serangan hama di kebun
 
-- intent: navigation_help
-  examples: |
-    - Gw gak ngerti pake aplikasi ini
-    - Gimana cara buka fitur cuaca?
-    - Gak tau cara lapor hama
-    - Navigasi aplikasi ini ribet
-    - Gimana cara pindah menu?
-    - Gw bingung pake ini
+  - intent: pest_map
+    examples: |
+      - tunjukkan peta persebaran hama
+      - saya ingin lihat peta hama
+      - di mana saja hama ditemukan?
+      - peta hama terbaru ada?
+      - peta penyebaran hama di daerah saya
+      - boleh lihat peta hama?
+      - peta serangan hama saat ini
+      - saya butuh info peta hama
+      - apakah ada peta persebaran hama?
+      - tunjukkan lokasi hama
+      - peta hama untuk daerah pertanian saya
+      - bisa kasih saya peta hama?
+      - peta wilayah yang terkena hama
+      - saya ingin tahu sebaran hama
+      - di mana titik penyebaran hama?
+      - peta terbaru serangan hama
+      - apakah ada peta hama untuk wilayah ini?
+      - info peta hama salak
+      - peta penyebaran hama lalat buah
+      - saya ingin melihat peta serangan hama
+      - peta daerah yang terserang hama
+      - peta serangan hama terkini
+      - tolong berikan peta hama
+      - peta persebaran hama wereng
+      - peta lokasi hama salak
+      - saya perlu peta hama
+      - tunjukkan peta sebaran hama sekarang
+      - di mana peta serangan hama?
+      - peta serangan hama yang terbaru
 
-- intent: not_satisfied
-  examples: |
-    - Gak membantu
-    - Masih bingung nih
-    - Jawabannya gak sesuai
-    - Gak puas
-    - Kok gini sih?
-    - Gw gak ngerti
-    - Masih gak jelas
+  - intent: pest_photo
+    examples: |
+      - saya ingin hitung hama lewat foto
+      - upload gambar hama
+      - deteksi hama dari foto
+      - bagaimana cara unggah foto lalat buah?
+      - saya mau kirim foto hama
+      - tolong analisis foto hama saya
+      - saya punya gambar hama, bisa dihitung?
+      - cara mengirim foto hama ke aplikasi?
+      - foto serangan hama sudah saya ambil
+      - saya ingin mengenali hama lewat foto
+      - bisa hitung hama dari gambar?
+      - tolong analisa gambar hama saya
+      - saya upload foto hama sekarang
+      - cara upload foto serangan hama
+      - saya punya foto lalat buah
+      - bisa bantu hitung hama dari foto?
+      - saya kirim foto serangan hama
+      - foto hama di kebun saya
+      - bagaimana cara ambil foto hama yang benar?
+      - saya mau kirim foto serangan hama
+      - tolong proses foto hama ini
+      - bisa identifikasi hama lewat foto?
+      - saya ingin tahu jumlah hama dari foto
+      - upload gambar serangan hama
+      - cara upload gambar hama ke sistem
+      - saya punya foto serangan hama salak
+      - bisa tolong hitung hama dari foto?
+      - bagaimana cara deteksi hama dengan foto?
+      - saya ingin unggah foto hama ke aplikasi
 
-- intent: yes
-  examples: |
-    - Ya
-    - Betul
-    - Benar banget
-    - Iya
-    - Yup
-    - Oke
-    - Bener
+  - intent: ask_articles
+    examples: |
+      - artikel terbaru tentang pertanian
+      - tips bertani
+      - info penting untuk petani
+      - saya ingin baca artikel
+      - ada tips tanam salak?
+      - berikan artikel tentang perawatan tanaman
+      - saya mau baca info terbaru pertanian
+      - ada artikel soal hama lalat buah?
+      - artikel apa yang terbaru?
+      - saya butuh tips bertani salak
+      - artikel terbaru mengenai cuaca
+      - info bermanfaat untuk petani
+      - saya ingin tahu artikel terbaru
+      - ada artikel untuk musim tanam?
+      - tips mengatasi hama dalam artikel?
+      - artikel yang membahas penyakit tanaman
+      - saya ingin baca artikel edukasi
+      - artikel tentang pemupukan tanaman salak
+      - ada artikel tentang panen salak?
+      - saya cari artikel terkait pertanian organik
+      - artikel untuk petani pemula
+      - ada artikel tentang cuaca dan hama?
+      - saya mau artikel tentang teknik bertani
+      - artikel yang terbaru dan penting
+      - artikel yang membahas hama salak
+      - artikel dengan info cuaca hari ini
+      - artikel tentang pengelolaan lahan pertanian
+      - saya ingin artikel tentang penyakit tanaman
+      - artikel yang mudah dipahami untuk petani
 
-- intent: no
-  examples: |
-    - Gak
-    - Bukan
-    - Salah
-    - Nope
-    - Enggak
-    - Gak tuh
-    - Kagak
+  - intent: profile_management
+    examples: |
+      - ubah data saya
+      - perbarui profil
+      - edit informasi petani
+      - saya ingin ganti nomor telepon
+      - saya mau update data pribadi
+      - bagaimana cara mengubah profil saya?
+      - update alamat saya di aplikasi
+      - saya ingin edit profil
+      - perbarui data kontak saya
+      - saya mau mengganti info profil
+      - tolong bantu saya ubah data
+      - saya ingin ganti email di profil
+      - update nomor hp saya
+      - cara mengganti informasi profil
+      - saya ingin update info pertanian saya
+      - ubah data lahan saya
+      - perbarui profil petani
+      - saya mau ganti foto profil
+      - bagaimana cara update data saya?
+      - saya ingin edit info kontak
+      - update data pribadi saya di aplikasi
+      - saya mau mengubah data diri
+      - tolong bantu update profil saya
+      - saya ingin mengganti alamat email
+      - cara update profil dengan data baru
+      - saya mau ubah data pertanian saya
+      - edit data petani saya di aplikasi
+      - saya ingin memperbarui info kontak
+      - ubah data pribadi di aplikasi
+      - update data saya segera
+
+  - intent: feedback_positive
+    examples: |
+      - aplikasinya sangat membantu
+      - bagus sekali botnya
+      - saya puas
+      - fitur-fiturnya keren
+      - saya suka menggunakan aplikasi ini
+      - bot ini sangat responsif
+      - fitur yang disediakan sangat membantu
+      - saya senang dengan aplikasi ini
+      - sangat mudah digunakan
+      - aplikasi ini sangat bermanfaat
+      - saya merasa terbantu dengan fitur ini
+      - bagus, teruskan kerja bagusnya
+      - saya suka fitur chatbotnya
+      - aplikasi berjalan lancar dan cepat
+      - terima kasih atas bantuannya
+      - fitur aplikasi sangat lengkap
+      - sangat puas dengan pelayanan bot
+      - saya senang pakai MySalak
+      - ini aplikasi terbaik yang pernah saya pakai
+      - fitur-fiturnya membantu saya bertani
+      - bot sangat membantu dalam pertanian saya
+      - saya suka update terbaru dari aplikasi
+      - layanan chatbotnya cepat dan tepat
+      - aplikasi mudah dipahami dan digunakan
+      - saya puas dengan hasil dari aplikasi ini
+      - terima kasih sudah membuat aplikasi ini
+      - aplikasi ini sangat membantu petani seperti saya
+      - bot sangat pintar dan informatif
+      - saya suka antarmuka aplikasi ini
+      - fitur chatbot membantu saya setiap hari
+
+  - intent: feedback_negative
+    examples: |
+      - saya kesulitan memakai aplikasi
+      - aplikasinya kurang jelas
+      - saya tidak puas
+      - susah dipakai aplikasinya
+      - aplikasi sering error
+      - saya bingung cara pakainya
+      - fiturnya kurang lengkap
+      - aplikasi lambat sekali
+      - saya kurang mengerti cara kerja aplikasi
+      - ada bug saat saya gunakan
+      - aplikasi sering keluar sendiri
+      - fiturnya sulit digunakan
+      - saya merasa aplikasi kurang membantu
+      - sulit untuk memahami fitur aplikasi
+      - saya kecewa dengan aplikasi ini
+      - sering terjadi gangguan saat pakai aplikasi
+      - aplikasi tidak responsif
+      - saya kesulitan login ke aplikasi
+      - fitur yang saya butuhkan tidak ada
+      - saya ingin fitur yang lebih mudah dipakai
+      - aplikasi ini membingungkan
+      - saya ingin fitur yang lebih jelas
+      - sulit mendapatkan info lewat aplikasi
+      - banyak error saat saya gunakan
+      - aplikasi sering macet
+      - fitur kurang intuitif
+      - saya merasa aplikasi kurang stabil
+      - sulit mengakses beberapa fitur
+      - saya ingin aplikasi yang lebih user friendly
+      - sering ada masalah teknis saat pakai aplikasi
+
+  - intent: contact_admin
+    examples: |
+      - saya ingin hubungi admin
+      - ada nomor kontak?
+      - bisa saya bicara dengan petugas?
+      - saya perlu bantuan langsung
+      - bagaimana cara menghubungi admin?
+      - saya ingin berbicara dengan petugas support
+      - tolong hubungkan saya dengan admin
+      - ada kontak layanan pelanggan?
+      - saya butuh bantuan dari admin
+      - siapa yang bisa saya hubungi untuk bantuan?
+      - saya ingin nomor admin
+      - saya perlu kontak admin untuk masalah ini
+      - bisakah saya chat langsung dengan admin?
+      - saya ingin sampaikan keluhan ke admin
+      - bagaimana saya bisa menghubungi petugas?
+      - saya ingin bicara langsung dengan admin
+      - tolong berikan nomor admin
+      - saya perlu bantuan segera dari admin
+      - ada kontak support?
+      - saya ingin konsultasi dengan admin
+      - saya perlu bantuan teknis dari admin
+      - bagaimana cara menghubungi tim support?
+      - saya ingin bertanya langsung ke admin
+      - tolong hubungi admin untuk saya
+      - saya ingin kontak petugas aplikasi
+      - ada nomor telepon admin?
+      - saya ingin berbicara dengan bagian teknis
+      - saya butuh kontak langsung admin aplikasi
+      - saya ingin tahu cara menghubungi admin
+      - tolong bantu saya hubungi admin
+
+  - intent: faq_app_usage
+    examples: |
+      - MySalak itu apa?
+      - kegunaan aplikasi ini apa?
+      - siapa yang bisa pakai MySalak?
+      - aplikasi ini buat apa?
+      - apa fungsi MySalak?
+      - bagaimana cara kerja MySalak?
+      - aplikasi ini untuk apa?
+      - siapa target pengguna aplikasi ini?
+      - apa manfaat menggunakan MySalak?
+      - MySalak digunakan untuk apa?
+      - bagaimana aplikasi ini membantu petani?
+      - apa kelebihan aplikasi MySalak?
+      - MySalak bisa dipakai oleh siapa saja?
+      - apa saja fitur utama MySalak?
+      - untuk siapa aplikasi ini dibuat?
+      - bagaimana cara menggunakan aplikasi MySalak?
+      - MySalak itu aplikasi apa sebenarnya?
+      - apa tujuan aplikasi MySalak?
+      - aplikasi ini cocok untuk siapa?
+      - apa keunggulan MySalak dibanding aplikasi lain?
+      - saya ingin tahu tentang MySalak
+      - apa saja fitur yang ada di MySalak?
+      - MySalak membantu petani bagaimana?
+      - saya baru dengar MySalak, apa itu?
+      - untuk apa aplikasi MySalak dibuat?
+      - siapa yang harus menggunakan aplikasi ini?
+      - apa yang bisa saya lakukan dengan MySalak?
+      - MySalak itu platform apa?
+      - bagaimana MySalak bisa membantu saya?
+      - apa fungsi utama aplikasi ini?
+
+  - intent: ask_features
+    examples: |
+      - apa saja fitur di MySalak?
+      - fitur-fitur yang tersedia apa?
+      - bisa jelaskan fitur aplikasi ini?
+      - fitur utamanya apa aja?
+      - saya ingin tahu fitur MySalak
+      - MySalak punya fitur apa saja?
+      - tolong jelaskan fitur dalam aplikasi ini
+      - ada fitur baru apa di MySalak?
+      - fitur apa yang membantu petani?
+      - saya ingin tahu fitur unggulan MySalak
+      - apa fitur yang bisa saya gunakan untuk lapor hama?
+      - fitur navigasi aplikasi bagaimana?
+      - ada fitur hitung hama dari foto gak?
+      - fitur apa yang buat aplikasi ini spesial?
+      - saya ingin tau fitur terkait cuaca di MySalak
+      - apa saja fitur yang membantu petani salak?
+      - tolong jelaskan fitur monitoring hama
+      - MySalak punya fitur edukasi gak?
+      - fitur apa yang paling sering dipakai?
+      - fitur notifikasi ada gak?
+      - ada fitur kontak admin gak?
+      - fitur pelaporan masalah apa saja?
+      - fitur update berita pertanian?
+      - saya penasaran fitur chat bot-nya
+      - fitur statistik pertumbuhan tanaman
+      - ada fitur pengingat atau alarm?
+      - fitur pencarian artikel pertanian?
+      - bagaimana fitur edit profil?
+      - ada fitur bantuan pengguna?
+      - fitur keamanan data bagaimana?
+
+  - intent: explain_pests
+    examples: |
+      - apa saja jenis hama?
+      - hama apa yang sering menyerang?
+      - jelaskan jenis hama
+      - hama apa saja yang ada?
+      - saya ingin tahu jenis hama di kebun salak
+      - hama apa yang paling berbahaya?
+      - tolong jelaskan tentang hama lalat buah
+      - jenis hama apa yang biasa muncul di musim hujan?
+      - ada hama baru yang harus diwaspadai?
+      - hama mana yang paling sering menyerang salak?
+      - apa tanda-tanda serangan hama?
+      - jenis hama apa yang menyerang daun salak?
+      - hama apa yang bisa merusak buah?
+      - bagaimana cara mengenali hama lalat buah?
+      - tolong jelaskan hama ulat pada salak
+      - hama apa yang menyebabkan kerusakan terbesar?
+      - apa hama yang sering menyerang akar tanaman?
+      - ada hama yang sulit dihilangkan?
+      - hama apa yang biasanya muncul di musim kemarau?
+      - bagaimana cara membedakan hama satu dengan yang lain?
+      - apa efek serangan hama pada tanaman salak?
+      - hama apa yang biasanya ada di batang tanaman?
+      - ada hama yang membawa penyakit?
+      - tolong jelaskan hama yang perlu diwaspadai petani
+      - apa saja hama yang sering menyerang kebun salak?
+      - bagaimana cara mengidentifikasi hama lalat buah?
+      - hama apa yang sulit dilihat tapi berbahaya?
+      - hama mana yang paling sering muncul di daerah tropis?
+      - bagaimana pengaruh cuaca terhadap jenis hama?
+
+  - intent: how_to_record_pest
+    examples: |
+      - bagaimana cara mencatat hama?
+      - cara lapor hama gimana?
+      - bagaimana saya melaporkan temuan hama?
+      - gimana cara foto lalat di aplikasi?
+      - langkah-langkah melaporkan hama?
+      - tolong jelaskan cara lapor hama lewat aplikasi
+      - bagaimana upload foto hama di MySalak?
+      - apa prosedur lapor hama di aplikasi?
+      - saya mau tahu cara mencatat serangan hama
+      - bagaimana merekam lokasi serangan hama?
+      - tolong panduan cara melapor hama
+      - bagaimana cara input data hama?
+      - saya ingin tahu cara melaporkan hama dengan benar
+      - apa yang harus saya lakukan saat menemukan hama?
+      - cara upload gambar hama di aplikasi?
+      - bagaimana verifikasi laporan hama?
+      - saya ingin tahu proses pelaporan hama
+      - apa format laporan hama yang benar?
+      - gimana cara mengisi data hama di aplikasi?
+      - bagaimana cara mengirim laporan hama?
+      - bagaimana mencatat waktu serangan hama?
+      - apakah harus foto saat lapor hama?
+      - cara memastikan laporan hama diterima
+      - saya butuh panduan lapor hama dari aplikasi
+      - bagaimana cara update laporan hama?
+      - gimana cara memeriksa status laporan hama?
+      - cara menambahkan deskripsi pada laporan hama
+      - apa yang harus dilakukan setelah melaporkan hama?
+      - gimana cara memastikan data hama akurat?
+      - apakah bisa lapor hama tanpa foto?
+
+  - intent: navigation_help
+    examples: |
+      - bagaimana cara bernavigasi di aplikasi?
+      - panduan penggunaan aplikasi
+      - cara pakai MySalak gimana?
+      - tolong jelaskan cara navigasi
+      - saya bingung pakai aplikasinya
+      - bagaimana cara membuka fitur peta hama?
+      - bagaimana mencari artikel di aplikasi?
+      - saya tidak tahu cara pakai fitur laporan
+      - tolong tunjukkan cara menggunakan chatbot
+      - gimana cara cari data cuaca di aplikasi?
+      - bagaimana cara mengedit profil di aplikasi?
+      - bagaimana akses fitur hitung hama lewat foto?
+      - cara kembali ke halaman utama gimana?
+      - saya mau tahu cara pakai notifikasi
+      - tolong jelaskan tombol-tombol di aplikasi
+      - bagaimana cara logout dari aplikasi?
+      - saya kesulitan memahami menu di aplikasi
+      - gimana cara cari fitur bantuan?
+      - bagaimana cara lihat riwayat laporan saya?
+      - tolong beri panduan langkah demi langkah pakai MySalak
+      - bagaimana cara mengatur bahasa aplikasi?
+      - saya ingin tahu cara simpan data di aplikasi
+      - gimana cara update aplikasi MySalak?
+      - cara pakai fitur kontak admin gimana?
+      - tolong ajarin cara navigasi cepat di aplikasi
+      - gimana cara lihat statistik tanaman?
+      - saya butuh panduan penggunaan fitur foto hama
+      - bagaimana akses fitur feedback di aplikasi?
+      - saya mau belajar fitur terbaru MySalak
+      - gimana cara cek pemberitahuan?
+
+  - intent: weather_pest_relation
+    examples: |
+      - apa hubungan cuaca dan hama?
+      - kenapa cuaca bisa pengaruhi hama?
+      - jelaskan pengaruh cuaca terhadap hama
+      - apakah cuaca memengaruhi serangan hama?
+      - bagaimana cuaca memengaruhi pertumbuhan hama?
+      - kenapa hama lebih banyak muncul saat hujan?
+      - apakah cuaca panas berdampak pada hama?
+      - tolong jelaskan hubungan antara cuaca dan serangan hama
+      - bagaimana perubahan cuaca mempengaruhi serangan hama?
+      - cuaca apa yang paling berbahaya untuk tanaman karena hama?
+      - apakah cuaca lembab memicu serangan hama?
+      - bagaimana suhu udara mempengaruhi hama?
+      - apakah ada cuaca tertentu yang harus diwaspadai petani?
+      - kenapa hama lebih aktif saat cuaca dingin?
+      - bagaimana hujan memengaruhi jumlah hama?
+      - apa pengaruh musim kemarau pada serangan hama?
+      - apakah angin kencang berpengaruh pada penyebaran hama?
+      - bagaimana cuaca ekstrem berdampak pada hama?
+      - apakah ada hubungan antara cuaca dan wabah hama?
+      - tolong jelaskan kenapa cuaca penting untuk pengendalian hama
+      - bagaimana cara mengantisipasi hama berdasarkan ramalan cuaca?
+      - apakah perubahan iklim memengaruhi serangan hama?
+      - bagaimana petani bisa menggunakan data cuaca untuk kontrol hama?
+      - apakah curah hujan tinggi menyebabkan banyak hama?
+      - apakah suhu tinggi membuat hama cepat berkembang?
+      - bagaimana cuaca memengaruhi aktivitas lalat buah?
+      - apakah cuaca mendung memengaruhi hama?
+      - bagaimana cuaca panas ekstrem berdampak pada tanaman dan hama?
+      - apakah kelembapan tinggi menguntungkan hama?

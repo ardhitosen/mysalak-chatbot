@@ -1,51 +1,82 @@
 version: "3.1"
 stories:
-- story: greeting
+
+- story: Skenario menyapa dan tanya cuaca
   steps:
     - intent: greet
     - action: utter_greet
+    - intent: ask_weather
+    - action: utter_ask_weather
 
-- story: help_request
-  steps:
-    - intent: ask_help
-    - action: utter_ask_help
-
-- story: pest_report
+- story: Lapor hama dan minta peta persebaran
   steps:
     - intent: report_pest
     - action: utter_report_pest
+    - intent: pest_map
+    - action: utter_pest_map
 
-- story: weather_info
+- story: Hitung hama dari foto
   steps:
-    - intent: weather_info
-    - action: utter_weather_info
+    - intent: pest_photo
+    - action: utter_pest_photo
 
-- story: navigation_help
+- story: Baca artikel dan info fitur
+  steps:
+    - intent: ask_articles
+    - action: utter_ask_articles
+    - intent: ask_features
+    - action: utter_ask_features
+
+- story: Feedback positif
+  steps:
+    - intent: feedback_positive
+    - action: utter_feedback_positive
+
+- story: Feedback negatif dan ingin hubungi admin
+  steps:
+    - intent: feedback_negative
+    - action: utter_feedback_negative
+    - intent: contact_admin
+    - action: utter_contact_admin
+
+- story: Tanya tentang aplikasi
+  steps:
+    - intent: faq_app_usage
+    - action: utter_faq_app_usage
+
+- story: Edit data profil
+  steps:
+    - intent: profile_management
+    - action: utter_profile_management
+
+- story: Skenario lengkap dari sapaan sampai selesai
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_weather
+    - action: utter_ask_weather
+    - intent: report_pest
+    - action: utter_report_pest
+    - intent: pest_map
+    - action: utter_pest_map
+    - intent: ask_articles
+    - action: utter_ask_articles
+    - intent: feedback_positive
+    - action: utter_feedback_positive
+    - intent: goodbye
+    - action: utter_goodbye
+    
+- story: Jelaskan cara mencatat dan jenis hama
+  steps:
+    - intent: how_to_record_pest
+    - action: utter_how_to_record_pest
+    - intent: explain_pests
+    - action: utter_explain_pests
+
+- story: Jelaskan navigasi dan hubungan cuaca
   steps:
     - intent: navigation_help
     - action: utter_navigation_help
+    - intent: weather_pest_relation
+    - action: utter_weather_pest_relation
 
-- story: feedback_yes
-  steps:
-    - intent: yes
-    - action: utter_yes
-
-- story: feedback_no
-  steps:
-    - intent: no
-    - action: utter_not_satisfied
-
-- story: user_not_satisfied
-  steps:
-    - intent: not_satisfied
-    - action: utter_not_satisfied
-
-- story: goodbye
-  steps:
-    - intent: goodbye
-    - action: utter_goodbye
-
-- story: Menjelaskan semua fitur
-  steps:
-    - intent: explain_all_features
-    - action: utter_explain_all_features

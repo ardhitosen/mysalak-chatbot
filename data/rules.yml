@@ -1,46 +1,97 @@
 version: "3.1"
 rules:
-- rule: Greet the user
-  steps:
-    - intent: greet
-    - action: utter_greet
+  - rule: Sapa pengguna
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- rule: Say goodbye
-  steps:
-    - intent: goodbye
-    - action: utter_goodbye
+  - rule: Ucapkan selamat tinggal
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Provide assistance
-  steps:
-    - intent: ask_help
-    - action: utter_ask_help
+  - rule: Tanggapan terima kasih
+    steps:
+      - intent: thanks
+      - action: utter_thanks
 
-- rule: Report pest
-  steps:
-    - intent: report_pest
-    - action: utter_report_pest
+  - rule: Tampilkan informasi cuaca
+    steps:
+      - intent: ask_weather
+      - action: utter_ask_weather
 
-- rule: Provide weather info
-  steps:
-    - intent: weather_info
-    - action: utter_weather_info
+  - rule: Laporan hama
+    steps:
+      - intent: report_pest
+      - action: utter_report_pest
 
-- rule: Navigation help
-  steps:
-    - intent: navigation_help
-    - action: utter_navigation_help
+  - rule: Peta persebaran hama
+    steps:
+      - intent: pest_map
+      - action: utter_pest_map
 
-- rule: User feedback yes
-  steps:
-    - intent: yes
-    - action: utter_yes
+  - rule: Hitung hama dari foto
+    steps:
+      - intent: pest_photo
+      - action: utter_pest_photo
 
-- rule: User feedback no
-  steps:
-    - intent: no
-    - action: utter_not_satisfied
+  - rule: Baca artikel pertanian
+    steps:
+      - intent: ask_articles
+      - action: utter_ask_articles
 
-- rule: explain all features
-  steps:
-    - intent: explain_all_features
-    - action: utter_explain_all_features
+  - rule: Ubah data profil
+    steps:
+      - intent: profile_management
+      - action: utter_profile_management
+
+  - rule: Feedback positif
+    steps:
+      - intent: feedback_positive
+      - action: utter_feedback_positive
+
+  - rule: Feedback negatif
+    steps:
+      - intent: feedback_negative
+      - action: utter_feedback_negative
+
+  - rule: Kontak admin
+    steps:
+      - intent: contact_admin
+      - action: utter_contact_admin
+
+  - rule: Penjelasan aplikasi
+    steps:
+      - intent: faq_app_usage
+      - action: utter_faq_app_usage
+
+  - rule: Penjelasan fitur
+    steps:
+      - intent: ask_features
+      - action: utter_ask_features
+
+  - rule: Fallback response
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
+
+  - rule: Jelaskan jenis hama
+    steps:
+      - intent: explain_pests
+      - action: utter_explain_pests
+
+  - rule: Jelaskan cara mencatat temuan hama
+    steps:
+      - intent: how_to_record_pest
+      - action: utter_how_to_record_pest
+
+  - rule: Jelaskan cara bernavigasi
+    steps:
+      - intent: navigation_help
+      - action: utter_navigation_help
+
+  - rule: Jelaskan hubungan cuaca dan hama
+    steps:
+      - intent: weather_pest_relation
+      - action: utter_weather_pest_relation
+
